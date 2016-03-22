@@ -1,0 +1,7 @@
+usuarios_login:
+    path:     /
+    defaults: { _controller: usuariosBundle:Default:index }
+usuarios_login_check:
+    path:     /login_check
+usuarios_logout:
+    path:     /logout

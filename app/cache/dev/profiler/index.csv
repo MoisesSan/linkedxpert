@@ -1,0 +1,9 @@
+847ecf,127.0.0.1,GET,http://local.symfony.com/app_dev.php/logout,1458238022,,302
+9364f4,127.0.0.1,GET,http://local.symfony.com/app_dev.php/,1458238023,,200
+0d8838,127.0.0.1,GET,http://local.symfony.com/app_dev.php/,1458238027,,200
+92e482,127.0.0.1,POST,http://local.symfony.com/app_dev.php/login_check,1458238037,,302
+aa534a,127.0.0.1,GET,http://local.symfony.com/app_dev.php/,1458238038,,200
+340d86,127.0.0.1,POST,http://local.symfony.com/app_dev.php/login_check,1458238044,,302
+ff0790,127.0.0.1,GET,http://local.symfony.com/app_dev.php/,1458238045,,200
+0538a6,127.0.0.1,POST,http://local.symfony.com/app_dev.php/login_check,1458238050,,302
+201930,127.0.0.1,GET,http://local.symfony.com/app_dev.php/fe,1458238051,,200

@@ -1,0 +1,4 @@
+services:
+#    fe.example:
+#        class: nctech\feBundle\Example
+#        arguments: [@service_id, "plain_value", %parameter%]

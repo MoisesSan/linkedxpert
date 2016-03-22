@@ -1,0 +1,3 @@
+be_homepage:
+    path:     /be/hello/{name}
+    defaults: { _controller: beBundle:Default:index }

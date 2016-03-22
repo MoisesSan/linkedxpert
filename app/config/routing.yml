@@ -1,0 +1,19 @@
+usuarios:
+    resource: "@usuariosBundle/Resources/config/routing.yml"
+    prefix:   /
+
+be:
+    resource: "@beBundle/Resources/config/routing.yml"
+    prefix:   /
+
+fe:
+    resource: "@feBundle/Resources/config/routing.yml"
+    prefix:   /
+
+home_login:
+   path:  /login
+   defaults: { _controller: usuariosBundle:Default:index }
+
+_fe:
+    path:   /fe
+    defaults: { _controller: feBundle:Default:index }

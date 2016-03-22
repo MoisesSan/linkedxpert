@@ -1,0 +1,323 @@
+<?php
+
+namespace nctech\usuariosBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * LxUsers
+ *
+ * @ORM\Table(name="lx_users", indexes={@ORM\Index(name="UserEmail", columns={"UserEmail"}), @ORM\Index(name="fk_customers_idx", columns={"customer_id"})})
+ * @ORM\Entity
+ */
+class LxUsers
+{
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="id", type="integer", nullable=false)
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="IDENTITY")
+     */
+    private $id;
+
+    /**
+     * @var \DateTime
+     *
+     * @ORM\Column(name="regDate", type="datetime", nullable=false)
+     */
+    private $regdate;
+
+    /**
+     * @var \DateTime
+     *
+     * @ORM\Column(name="regUpdateDate", type="datetime", nullable=false)
+     */
+    private $regupdatedate;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="regUpdateUserId", type="integer", nullable=false)
+     */
+    private $regupdateuserid = '0';
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="group_id", type="integer", nullable=true)
+     */
+    private $groupId = '0';
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="UserEmail", type="string", length=100, nullable=false)
+     */
+    private $useremail;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="UserPassword", type="string", length=20, nullable=false)
+     */
+    private $userpassword;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="UserSalt", type="string", length=255, nullable=false)
+     */
+    private $usersalt;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="customerName", type="string", length=255, nullable=true)
+     */
+    private $customername;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="UserFirstName", type="string", length=100, nullable=true)
+     */
+    private $userfirstname;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="UserLastName", type="string", length=100, nullable=true)
+     */
+    private $userlastname;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="UserFullName", type="string", length=255, nullable=true)
+     */
+    private $userfullname;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="UserPhoneArea", type="string", length=3, nullable=true)
+     */
+    private $userphonearea;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="UserPhoneNumber", type="string", length=20, nullable=true)
+     */
+    private $userphonenumber;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="UserStatus", type="integer", nullable=false)
+     */
+    private $userstatus;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="UserCompany", type="string", length=255, nullable=true)
+     */
+    private $usercompany;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="UserJobTitle", type="string", length=50, nullable=true)
+     */
+    private $userjobtitle;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="CancelStatus", type="integer", nullable=false)
+     */
+    private $cancelstatus;
+
+    /**
+     * @var \DateTime
+     *
+     * @ORM\Column(name="CancelDateTime", type="datetime", nullable=true)
+     */
+    private $canceldatetime;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="CancelUserID", type="integer", nullable=true)
+     */
+    private $canceluserid;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="CancelComment", type="text", length=65535, nullable=true)
+     */
+    private $cancelcomment;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="UserType", type="integer", nullable=false)
+     */
+    private $usertype;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="UserRole", type="string", length=255, nullable=false)
+     */
+    private $userrole;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="UserAddressCountryID", type="integer", nullable=false)
+     */
+    private $useraddresscountryid;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="UserAddressCountry", type="string", length=200, nullable=false)
+     */
+    private $useraddresscountry;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="UserAddressCity", type="string", length=200, nullable=false)
+     */
+    private $useraddresscity;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="UserAddressStateID", type="integer", nullable=false)
+     */
+    private $useraddressstateid;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="UserAddressState", type="string", length=100, nullable=false)
+     */
+    private $useraddressstate;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="UserDisabled", type="integer", nullable=false)
+     */
+    private $userdisabled;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="UserActivationCode", type="string", length=100, nullable=true)
+     */
+    private $useractivationcode;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="UserActivateDetails", type="text", length=65535, nullable=true)
+     */
+    private $useractivatedetails;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="UserAge", type="integer", nullable=true)
+     */
+    private $userage;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="UserGender", type="string", length=1, nullable=true)
+     */
+    private $usergender;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="UserPhone", type="string", length=20, nullable=true)
+     */
+    private $userphone;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="UserSuscriptionTotal", type="integer", nullable=true)
+     */
+    private $usersuscriptiontotal;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="UserSupervisorID", type="integer", nullable=true)
+     */
+    private $usersupervisorid;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="UserSupervisorFullName", type="string", length=255, nullable=true)
+     */
+    private $usersupervisorfullname;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="UserDemo", type="integer", nullable=true)
+     */
+    private $userdemo;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="UserWidgets", type="text", length=65535, nullable=true)
+     */
+    private $userwidgets;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="UserSemestre", type="string", length=100, nullable=true)
+     */
+    private $usersemestre;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="UserCareer", type="string", length=255, nullable=true)
+     */
+    private $usercareer;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="UserCampus", type="string", length=100, nullable=true)
+     */
+    private $usercampus;
+
+    /**
+     * @var \LxCustomers
+     *
+     * @ORM\ManyToOne(targetEntity="LxCustomers")
+     * @ORM\JoinColumns({
+     *   @ORM\JoinColumn(name="customer_id", referencedColumnName="id")
+     * })
+     */
+    private $customer;
+
+
+}
+

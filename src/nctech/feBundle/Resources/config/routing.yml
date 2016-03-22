@@ -1,0 +1,3 @@
+fe_homepage:
+    path:     /
+    defaults: { _controller: feBundle:Default:index }
