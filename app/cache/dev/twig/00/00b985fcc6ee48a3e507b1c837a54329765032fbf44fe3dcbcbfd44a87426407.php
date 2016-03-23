@@ -15,8 +15,8 @@ class __TwigTemplate_6cd8f37cf387011fa9038bb0726bdfd706987f37a8806df3e5bfd86e49d
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_6a11e4ae202225fb961e06f53a34f5055cfeb07efbcd477a46bee18099e09107 = $this->env->getExtension("native_profiler");
-        $__internal_6a11e4ae202225fb961e06f53a34f5055cfeb07efbcd477a46bee18099e09107->enter($__internal_6a11e4ae202225fb961e06f53a34f5055cfeb07efbcd477a46bee18099e09107_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "beBundle:Default:index.html.twig"));
+        $__internal_bcba2e9aaef4e59463e036888cb52e7610b0032f72176e836b981004d87e1953 = $this->env->getExtension("native_profiler");
+        $__internal_bcba2e9aaef4e59463e036888cb52e7610b0032f72176e836b981004d87e1953->enter($__internal_bcba2e9aaef4e59463e036888cb52e7610b0032f72176e836b981004d87e1953_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "beBundle:Default:index.html.twig"));
 
         // line 1
         echo "Backend Bundle Hello ";
@@ -24,7 +24,7 @@ class __TwigTemplate_6cd8f37cf387011fa9038bb0726bdfd706987f37a8806df3e5bfd86e49d
         echo "!
 ";
         
-        $__internal_6a11e4ae202225fb961e06f53a34f5055cfeb07efbcd477a46bee18099e09107->leave($__internal_6a11e4ae202225fb961e06f53a34f5055cfeb07efbcd477a46bee18099e09107_prof);
+        $__internal_bcba2e9aaef4e59463e036888cb52e7610b0032f72176e836b981004d87e1953->leave($__internal_bcba2e9aaef4e59463e036888cb52e7610b0032f72176e836b981004d87e1953_prof);
 
     }
 

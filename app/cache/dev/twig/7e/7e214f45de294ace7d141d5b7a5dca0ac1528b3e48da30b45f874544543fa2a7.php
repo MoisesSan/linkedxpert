@@ -15,8 +15,8 @@ class __TwigTemplate_7b7485dc8c5c92d0e1e8db7e23a55bd3aa67fa918ceff3cada10409ad19
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_971fce501332904e9a6129a32604da2106fac1ed6ae1e70a1ba2295abd704dfc = $this->env->getExtension("native_profiler");
-        $__internal_971fce501332904e9a6129a32604da2106fac1ed6ae1e70a1ba2295abd704dfc->enter($__internal_971fce501332904e9a6129a32604da2106fac1ed6ae1e70a1ba2295abd704dfc_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@fe/Default/ORIG_index.html.twig"));
+        $__internal_c0e2d633eb4a3094332da3bd184dcdb8666909217ea65f438c46cfaaa0c6e1fc = $this->env->getExtension("native_profiler");
+        $__internal_c0e2d633eb4a3094332da3bd184dcdb8666909217ea65f438c46cfaaa0c6e1fc->enter($__internal_c0e2d633eb4a3094332da3bd184dcdb8666909217ea65f438c46cfaaa0c6e1fc_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@fe/Default/ORIG_index.html.twig"));
 
         // line 1
         echo "Frontend Bundle Hello ";
@@ -24,7 +24,7 @@ class __TwigTemplate_7b7485dc8c5c92d0e1e8db7e23a55bd3aa67fa918ceff3cada10409ad19
         echo "!
 ";
         
-        $__internal_971fce501332904e9a6129a32604da2106fac1ed6ae1e70a1ba2295abd704dfc->leave($__internal_971fce501332904e9a6129a32604da2106fac1ed6ae1e70a1ba2295abd704dfc_prof);
+        $__internal_c0e2d633eb4a3094332da3bd184dcdb8666909217ea65f438c46cfaaa0c6e1fc->leave($__internal_c0e2d633eb4a3094332da3bd184dcdb8666909217ea65f438c46cfaaa0c6e1fc_prof);
 
     }
 
