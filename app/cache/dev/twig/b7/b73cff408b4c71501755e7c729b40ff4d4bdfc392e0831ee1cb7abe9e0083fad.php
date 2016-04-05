@@ -21,23 +21,23 @@ class __TwigTemplate_2198dafbae23dcb5ff42b3f6a2de61858425b04f88f01f55af44206c01f
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_30cfe8c3d3cd12dd1110f538b629319862a6878c5c146f8d5d21394fcb8db55c = $this->env->getExtension("native_profiler");
-        $__internal_30cfe8c3d3cd12dd1110f538b629319862a6878c5c146f8d5d21394fcb8db55c->enter($__internal_30cfe8c3d3cd12dd1110f538b629319862a6878c5c146f8d5d21394fcb8db55c_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@AcmeDemo/Secured/login.html.twig"));
+        $__internal_1b20fe52f07e566f22153ac1d9890a076d01f741a5c1306c884c626a23f4f483 = $this->env->getExtension("native_profiler");
+        $__internal_1b20fe52f07e566f22153ac1d9890a076d01f741a5c1306c884c626a23f4f483->enter($__internal_1b20fe52f07e566f22153ac1d9890a076d01f741a5c1306c884c626a23f4f483_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@AcmeDemo/Secured/login.html.twig"));
 
         // line 35
         $context["code"] = $this->env->getExtension('demo')->getCode($this);
         // line 1
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_30cfe8c3d3cd12dd1110f538b629319862a6878c5c146f8d5d21394fcb8db55c->leave($__internal_30cfe8c3d3cd12dd1110f538b629319862a6878c5c146f8d5d21394fcb8db55c_prof);
+        $__internal_1b20fe52f07e566f22153ac1d9890a076d01f741a5c1306c884c626a23f4f483->leave($__internal_1b20fe52f07e566f22153ac1d9890a076d01f741a5c1306c884c626a23f4f483_prof);
 
     }
 
     // line 3
     public function block_content($context, array $blocks = array())
     {
-        $__internal_a6d48e395f6f791e0de8f1892cfedc85b9873e11816f083541f5d0bb0f93380e = $this->env->getExtension("native_profiler");
-        $__internal_a6d48e395f6f791e0de8f1892cfedc85b9873e11816f083541f5d0bb0f93380e->enter($__internal_a6d48e395f6f791e0de8f1892cfedc85b9873e11816f083541f5d0bb0f93380e_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "content"));
+        $__internal_b5208f2c20d62fe69c56da04a6e967e6ff835e69e6508a5028ba07f8a2d496ab = $this->env->getExtension("native_profiler");
+        $__internal_b5208f2c20d62fe69c56da04a6e967e6ff835e69e6508a5028ba07f8a2d496ab->enter($__internal_b5208f2c20d62fe69c56da04a6e967e6ff835e69e6508a5028ba07f8a2d496ab_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "content"));
 
         // line 4
         echo "    <h1 class=\"title\">Login</h1>
@@ -84,7 +84,7 @@ class __TwigTemplate_2198dafbae23dcb5ff42b3f6a2de61858425b04f88f01f55af44206c01f
     </form>
 ";
         
-        $__internal_a6d48e395f6f791e0de8f1892cfedc85b9873e11816f083541f5d0bb0f93380e->leave($__internal_a6d48e395f6f791e0de8f1892cfedc85b9873e11816f083541f5d0bb0f93380e_prof);
+        $__internal_b5208f2c20d62fe69c56da04a6e967e6ff835e69e6508a5028ba07f8a2d496ab->leave($__internal_b5208f2c20d62fe69c56da04a6e967e6ff835e69e6508a5028ba07f8a2d496ab_prof);
 
     }
 

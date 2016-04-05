@@ -29,18 +29,32 @@ class LxUsers
     private $regdate;
 
     /**
+     * @var integer
+     *
+     * @ORM\Column(name="regUserId", type="integer", nullable=true)
+     */
+    private $reguserid;
+
+    /**
      * @var \DateTime
      *
-     * @ORM\Column(name="regUpdateDate", type="datetime", nullable=false)
+     * @ORM\Column(name="regUpdateDate", type="datetime", nullable=true)
      */
     private $regupdatedate;
 
     /**
      * @var integer
      *
-     * @ORM\Column(name="regUpdateUserId", type="integer", nullable=false)
+     * @ORM\Column(name="regUpdateUserId", type="integer", nullable=true)
      */
     private $regupdateuserid = '0';
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="customerName", type="string", length=255, nullable=true)
+     */
+    private $customername;
 
     /**
      * @var integer
@@ -48,6 +62,13 @@ class LxUsers
      * @ORM\Column(name="group_id", type="integer", nullable=true)
      */
     private $groupId = '0';
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="userVisibleName", type="string", length=255, nullable=true)
+     */
+    private $uservisiblename;
 
     /**
      * @var string
@@ -69,13 +90,6 @@ class LxUsers
      * @ORM\Column(name="UserSalt", type="string", length=255, nullable=false)
      */
     private $usersalt;
-
-    /**
-     * @var string
-     *
-     * @ORM\Column(name="customerName", type="string", length=255, nullable=true)
-     */
-    private $customername;
 
     /**
      * @var string
@@ -113,9 +127,9 @@ class LxUsers
     private $userphonenumber;
 
     /**
-     * @var integer
+     * @var string
      *
-     * @ORM\Column(name="UserStatus", type="integer", nullable=false)
+     * @ORM\Column(name="UserStatus", type="string", length=1, nullable=false)
      */
     private $userstatus;
 
@@ -132,41 +146,6 @@ class LxUsers
      * @ORM\Column(name="UserJobTitle", type="string", length=50, nullable=true)
      */
     private $userjobtitle;
-
-    /**
-     * @var integer
-     *
-     * @ORM\Column(name="CancelStatus", type="integer", nullable=false)
-     */
-    private $cancelstatus;
-
-    /**
-     * @var \DateTime
-     *
-     * @ORM\Column(name="CancelDateTime", type="datetime", nullable=true)
-     */
-    private $canceldatetime;
-
-    /**
-     * @var integer
-     *
-     * @ORM\Column(name="CancelUserID", type="integer", nullable=true)
-     */
-    private $canceluserid;
-
-    /**
-     * @var string
-     *
-     * @ORM\Column(name="CancelComment", type="text", length=65535, nullable=true)
-     */
-    private $cancelcomment;
-
-    /**
-     * @var integer
-     *
-     * @ORM\Column(name="UserType", type="integer", nullable=false)
-     */
-    private $usertype;
 
     /**
      * @var string
@@ -225,18 +204,11 @@ class LxUsers
     private $useractivationcode;
 
     /**
-     * @var string
+     * @var \DateTime
      *
-     * @ORM\Column(name="UserActivateDetails", type="text", length=65535, nullable=true)
+     * @ORM\Column(name="UserBirthDate", type="date", nullable=true)
      */
-    private $useractivatedetails;
-
-    /**
-     * @var integer
-     *
-     * @ORM\Column(name="UserAge", type="integer", nullable=true)
-     */
-    private $userage;
+    private $userbirthdate;
 
     /**
      * @var string
@@ -279,34 +251,6 @@ class LxUsers
      * @ORM\Column(name="UserDemo", type="integer", nullable=true)
      */
     private $userdemo;
-
-    /**
-     * @var string
-     *
-     * @ORM\Column(name="UserWidgets", type="text", length=65535, nullable=true)
-     */
-    private $userwidgets;
-
-    /**
-     * @var string
-     *
-     * @ORM\Column(name="UserSemestre", type="string", length=100, nullable=true)
-     */
-    private $usersemestre;
-
-    /**
-     * @var string
-     *
-     * @ORM\Column(name="UserCareer", type="string", length=255, nullable=true)
-     */
-    private $usercareer;
-
-    /**
-     * @var string
-     *
-     * @ORM\Column(name="UserCampus", type="string", length=100, nullable=true)
-     */
-    private $usercampus;
 
     /**
      * @var \LxCustomers
