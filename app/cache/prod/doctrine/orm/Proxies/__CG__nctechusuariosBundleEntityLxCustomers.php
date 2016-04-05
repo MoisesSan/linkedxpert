@@ -64,10 +64,10 @@ class LxCustomers extends \nctech\usuariosBundle\Entity\LxCustomers implements \
     public function __sleep()
     {
         if ($this->__isInitialized__) {
-            return ['__isInitialized__', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxCustomers' . "\0" . 'id', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxCustomers' . "\0" . 'regdate', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxCustomers' . "\0" . 'regupdatedate', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxCustomers' . "\0" . 'regupdateuserid', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxCustomers' . "\0" . 'customername', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxCustomers' . "\0" . 'customeraddressstreet', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxCustomers' . "\0" . 'customeraddressnumber', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxCustomers' . "\0" . 'customeraddressnumberint', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxCustomers' . "\0" . 'customeraddressneigborhood', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxCustomers' . "\0" . 'customeraddresscity', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxCustomers' . "\0" . 'customeraddressstate', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxCustomers' . "\0" . 'customeraddresszip', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxCustomers' . "\0" . 'customeraddresscountry', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxCustomers' . "\0" . 'customeraddresscountryname', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxCustomers' . "\0" . 'customerphone1area', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxCustomers' . "\0" . 'customerphone1number', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxCustomers' . "\0" . 'customerphone1ext', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxCustomers' . "\0" . 'customerphone1note', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxCustomers' . "\0" . 'customerphone2area', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxCustomers' . "\0" . 'customerphone2number', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxCustomers' . "\0" . 'customerphone2ext', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxCustomers' . "\0" . 'customerphone2note', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxCustomers' . "\0" . 'customerphone3area', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxCustomers' . "\0" . 'customeremail1', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxCustomers' . "\0" . 'customeremail2', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxCustomers' . "\0" . 'customerwebsite', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxCustomers' . "\0" . 'customernote', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxCustomers' . "\0" . 'brandid', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxCustomers' . "\0" . 'branddomains', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxCustomers' . "\0" . 'brandhtmlregister', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxCustomers' . "\0" . 'brandhtmldownload', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxCustomers' . "\0" . 'brandlogo', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxCustomers' . "\0" . 'brandurl', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxCustomers' . "\0" . 'allianceid', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxCustomers' . "\0" . 'alliancestartdate', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxCustomers' . "\0" . 'allianceenddate', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxCustomers' . "\0" . 'alliancestudent', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxCustomers' . "\0" . 'allianceprofessor', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxCustomers' . "\0" . 'alliancegraduate', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxCustomers' . "\0" . 'allianceengineer', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxCustomers' . "\0" . 'cancel', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxCustomers' . "\0" . 'canceldate', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxCustomers' . "\0" . 'cancelnote', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxCustomers' . "\0" . 'campuslist'];
+            return ['__isInitialized__', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxCustomers' . "\0" . 'id', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxCustomers' . "\0" . 'regdate', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxCustomers' . "\0" . 'reguserid', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxCustomers' . "\0" . 'regupdatedate', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxCustomers' . "\0" . 'regupdateuserid', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxCustomers' . "\0" . 'customername', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxCustomers' . "\0" . 'customeraddressstreet', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxCustomers' . "\0" . 'customeraddressnumber', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxCustomers' . "\0" . 'customeraddressnumberint', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxCustomers' . "\0" . 'customeraddressneigborhood', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxCustomers' . "\0" . 'customeraddresscity', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxCustomers' . "\0" . 'customeraddressstate', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxCustomers' . "\0" . 'customeraddresszip', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxCustomers' . "\0" . 'customeraddresscountry', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxCustomers' . "\0" . 'customeraddresscountryname', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxCustomers' . "\0" . 'customerphone1area', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxCustomers' . "\0" . 'customerphone1number', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxCustomers' . "\0" . 'customerphone1ext', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxCustomers' . "\0" . 'customerphone1note', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxCustomers' . "\0" . 'customerphone2area', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxCustomers' . "\0" . 'customerphone2number', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxCustomers' . "\0" . 'customerphone2ext', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxCustomers' . "\0" . 'customerphone2note', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxCustomers' . "\0" . 'customerphone3area', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxCustomers' . "\0" . 'customeremail1', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxCustomers' . "\0" . 'customeremail2', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxCustomers' . "\0" . 'customerwebsite', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxCustomers' . "\0" . 'customernote', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxCustomers' . "\0" . 'branddomains', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxCustomers' . "\0" . 'brandlogo', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxCustomers' . "\0" . 'brandurl', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxCustomers' . "\0" . 'allianceid', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxCustomers' . "\0" . 'alliancestartdate', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxCustomers' . "\0" . 'allianceenddate', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxCustomers' . "\0" . 'alliancestudent', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxCustomers' . "\0" . 'allianceprofessor', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxCustomers' . "\0" . 'alliancegraduate', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxCustomers' . "\0" . 'allianceengineer', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxCustomers' . "\0" . 'loginmode', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxCustomers' . "\0" . 'customerstatus'];
         }
 
-        return ['__isInitialized__', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxCustomers' . "\0" . 'id', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxCustomers' . "\0" . 'regdate', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxCustomers' . "\0" . 'regupdatedate', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxCustomers' . "\0" . 'regupdateuserid', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxCustomers' . "\0" . 'customername', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxCustomers' . "\0" . 'customeraddressstreet', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxCustomers' . "\0" . 'customeraddressnumber', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxCustomers' . "\0" . 'customeraddressnumberint', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxCustomers' . "\0" . 'customeraddressneigborhood', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxCustomers' . "\0" . 'customeraddresscity', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxCustomers' . "\0" . 'customeraddressstate', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxCustomers' . "\0" . 'customeraddresszip', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxCustomers' . "\0" . 'customeraddresscountry', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxCustomers' . "\0" . 'customeraddresscountryname', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxCustomers' . "\0" . 'customerphone1area', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxCustomers' . "\0" . 'customerphone1number', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxCustomers' . "\0" . 'customerphone1ext', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxCustomers' . "\0" . 'customerphone1note', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxCustomers' . "\0" . 'customerphone2area', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxCustomers' . "\0" . 'customerphone2number', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxCustomers' . "\0" . 'customerphone2ext', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxCustomers' . "\0" . 'customerphone2note', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxCustomers' . "\0" . 'customerphone3area', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxCustomers' . "\0" . 'customeremail1', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxCustomers' . "\0" . 'customeremail2', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxCustomers' . "\0" . 'customerwebsite', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxCustomers' . "\0" . 'customernote', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxCustomers' . "\0" . 'brandid', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxCustomers' . "\0" . 'branddomains', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxCustomers' . "\0" . 'brandhtmlregister', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxCustomers' . "\0" . 'brandhtmldownload', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxCustomers' . "\0" . 'brandlogo', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxCustomers' . "\0" . 'brandurl', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxCustomers' . "\0" . 'allianceid', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxCustomers' . "\0" . 'alliancestartdate', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxCustomers' . "\0" . 'allianceenddate', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxCustomers' . "\0" . 'alliancestudent', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxCustomers' . "\0" . 'allianceprofessor', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxCustomers' . "\0" . 'alliancegraduate', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxCustomers' . "\0" . 'allianceengineer', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxCustomers' . "\0" . 'cancel', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxCustomers' . "\0" . 'canceldate', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxCustomers' . "\0" . 'cancelnote', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxCustomers' . "\0" . 'campuslist'];
+        return ['__isInitialized__', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxCustomers' . "\0" . 'id', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxCustomers' . "\0" . 'regdate', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxCustomers' . "\0" . 'reguserid', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxCustomers' . "\0" . 'regupdatedate', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxCustomers' . "\0" . 'regupdateuserid', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxCustomers' . "\0" . 'customername', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxCustomers' . "\0" . 'customeraddressstreet', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxCustomers' . "\0" . 'customeraddressnumber', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxCustomers' . "\0" . 'customeraddressnumberint', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxCustomers' . "\0" . 'customeraddressneigborhood', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxCustomers' . "\0" . 'customeraddresscity', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxCustomers' . "\0" . 'customeraddressstate', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxCustomers' . "\0" . 'customeraddresszip', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxCustomers' . "\0" . 'customeraddresscountry', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxCustomers' . "\0" . 'customeraddresscountryname', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxCustomers' . "\0" . 'customerphone1area', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxCustomers' . "\0" . 'customerphone1number', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxCustomers' . "\0" . 'customerphone1ext', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxCustomers' . "\0" . 'customerphone1note', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxCustomers' . "\0" . 'customerphone2area', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxCustomers' . "\0" . 'customerphone2number', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxCustomers' . "\0" . 'customerphone2ext', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxCustomers' . "\0" . 'customerphone2note', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxCustomers' . "\0" . 'customerphone3area', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxCustomers' . "\0" . 'customeremail1', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxCustomers' . "\0" . 'customeremail2', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxCustomers' . "\0" . 'customerwebsite', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxCustomers' . "\0" . 'customernote', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxCustomers' . "\0" . 'branddomains', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxCustomers' . "\0" . 'brandlogo', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxCustomers' . "\0" . 'brandurl', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxCustomers' . "\0" . 'allianceid', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxCustomers' . "\0" . 'alliancestartdate', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxCustomers' . "\0" . 'allianceenddate', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxCustomers' . "\0" . 'alliancestudent', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxCustomers' . "\0" . 'allianceprofessor', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxCustomers' . "\0" . 'alliancegraduate', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxCustomers' . "\0" . 'allianceengineer', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxCustomers' . "\0" . 'loginmode', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxCustomers' . "\0" . 'customerstatus'];
     }
 
     /**
@@ -208,6 +208,28 @@ class LxCustomers extends \nctech\usuariosBundle\Entity\LxCustomers implements \
         $this->__initializer__ && $this->__initializer__->__invoke($this, 'getRegdate', []);
 
         return parent::getRegdate();
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function setReguserid($reguserid)
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setReguserid', [$reguserid]);
+
+        return parent::setReguserid($reguserid);
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function getReguserid()
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getReguserid', []);
+
+        return parent::getReguserid();
     }
 
     /**
@@ -763,28 +785,6 @@ class LxCustomers extends \nctech\usuariosBundle\Entity\LxCustomers implements \
     /**
      * {@inheritDoc}
      */
-    public function setBrandid($brandid)
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setBrandid', [$brandid]);
-
-        return parent::setBrandid($brandid);
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function getBrandid()
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getBrandid', []);
-
-        return parent::getBrandid();
-    }
-
-    /**
-     * {@inheritDoc}
-     */
     public function setBranddomains($branddomains)
     {
 
@@ -802,50 +802,6 @@ class LxCustomers extends \nctech\usuariosBundle\Entity\LxCustomers implements \
         $this->__initializer__ && $this->__initializer__->__invoke($this, 'getBranddomains', []);
 
         return parent::getBranddomains();
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function setBrandhtmlregister($brandhtmlregister)
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setBrandhtmlregister', [$brandhtmlregister]);
-
-        return parent::setBrandhtmlregister($brandhtmlregister);
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function getBrandhtmlregister()
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getBrandhtmlregister', []);
-
-        return parent::getBrandhtmlregister();
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function setBrandhtmldownload($brandhtmldownload)
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setBrandhtmldownload', [$brandhtmldownload]);
-
-        return parent::setBrandhtmldownload($brandhtmldownload);
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function getBrandhtmldownload()
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getBrandhtmldownload', []);
-
-        return parent::getBrandhtmldownload();
     }
 
     /**
@@ -1049,89 +1005,45 @@ class LxCustomers extends \nctech\usuariosBundle\Entity\LxCustomers implements \
     /**
      * {@inheritDoc}
      */
-    public function setCancel($cancel)
+    public function setLoginmode($loginmode)
     {
 
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setCancel', [$cancel]);
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setLoginmode', [$loginmode]);
 
-        return parent::setCancel($cancel);
+        return parent::setLoginmode($loginmode);
     }
 
     /**
      * {@inheritDoc}
      */
-    public function getCancel()
+    public function getLoginmode()
     {
 
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getCancel', []);
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getLoginmode', []);
 
-        return parent::getCancel();
+        return parent::getLoginmode();
     }
 
     /**
      * {@inheritDoc}
      */
-    public function setCanceldate($canceldate)
+    public function setCustomerstatus($customerstatus)
     {
 
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setCanceldate', [$canceldate]);
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setCustomerstatus', [$customerstatus]);
 
-        return parent::setCanceldate($canceldate);
+        return parent::setCustomerstatus($customerstatus);
     }
 
     /**
      * {@inheritDoc}
      */
-    public function getCanceldate()
+    public function getCustomerstatus()
     {
 
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getCanceldate', []);
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getCustomerstatus', []);
 
-        return parent::getCanceldate();
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function setCancelnote($cancelnote)
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setCancelnote', [$cancelnote]);
-
-        return parent::setCancelnote($cancelnote);
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function getCancelnote()
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getCancelnote', []);
-
-        return parent::getCancelnote();
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function setCampuslist($campuslist)
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setCampuslist', [$campuslist]);
-
-        return parent::setCampuslist($campuslist);
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function getCampuslist()
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getCampuslist', []);
-
-        return parent::getCampuslist();
+        return parent::getCustomerstatus();
     }
 
 }

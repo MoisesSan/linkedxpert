@@ -29,18 +29,25 @@ class LxCustomers
     private $regdate = '0000-00-00 00:00:00';
 
     /**
+     * @var integer
+     *
+     * @ORM\Column(name="regUserId", type="integer", nullable=true)
+     */
+    private $reguserid;
+
+    /**
      * @var \DateTime
      *
-     * @ORM\Column(name="regUpdateDate", type="datetime", nullable=false)
+     * @ORM\Column(name="regUpdateDate", type="datetime", nullable=true)
      */
     private $regupdatedate = '0000-00-00 00:00:00';
 
     /**
      * @var integer
      *
-     * @ORM\Column(name="regUpdateUserId", type="integer", nullable=false)
+     * @ORM\Column(name="regUpdateUserId", type="integer", nullable=true)
      */
-    private $regupdateuserid = '0';
+    private $regupdateuserid;
 
     /**
      * @var string
@@ -52,203 +59,182 @@ class LxCustomers
     /**
      * @var string
      *
-     * @ORM\Column(name="CustomerAddressStreet", type="string", length=255, nullable=false)
+     * @ORM\Column(name="CustomerAddressStreet", type="string", length=255, nullable=true)
      */
     private $customeraddressstreet = '';
 
     /**
      * @var string
      *
-     * @ORM\Column(name="CustomerAddressNumber", type="string", length=100, nullable=false)
+     * @ORM\Column(name="CustomerAddressNumber", type="string", length=100, nullable=true)
      */
     private $customeraddressnumber = '';
 
     /**
      * @var string
      *
-     * @ORM\Column(name="CustomerAddressNumberInt", type="string", length=100, nullable=false)
+     * @ORM\Column(name="CustomerAddressNumberInt", type="string", length=100, nullable=true)
      */
     private $customeraddressnumberint;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="CustomerAddressNeigborhood", type="string", length=255, nullable=false)
+     * @ORM\Column(name="CustomerAddressNeigborhood", type="string", length=255, nullable=true)
      */
     private $customeraddressneigborhood = '';
 
     /**
      * @var string
      *
-     * @ORM\Column(name="CustomerAddressCity", type="string", length=255, nullable=false)
+     * @ORM\Column(name="CustomerAddressCity", type="string", length=255, nullable=true)
      */
     private $customeraddresscity = '';
 
     /**
      * @var string
      *
-     * @ORM\Column(name="CustomerAddressState", type="string", length=100, nullable=false)
+     * @ORM\Column(name="CustomerAddressState", type="string", length=100, nullable=true)
      */
     private $customeraddressstate = '';
 
     /**
      * @var string
      *
-     * @ORM\Column(name="CustomerAddressZip", type="string", length=10, nullable=false)
+     * @ORM\Column(name="CustomerAddressZip", type="string", length=10, nullable=true)
      */
     private $customeraddresszip = '';
 
     /**
      * @var string
      *
-     * @ORM\Column(name="CustomerAddressCountry", type="string", length=50, nullable=false)
+     * @ORM\Column(name="CustomerAddressCountry", type="string", length=50, nullable=true)
      */
     private $customeraddresscountry;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="CustomerAddressCountryName", type="string", length=200, nullable=false)
+     * @ORM\Column(name="CustomerAddressCountryName", type="string", length=200, nullable=true)
      */
     private $customeraddresscountryname;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="CustomerPhone1Area", type="string", length=20, nullable=false)
+     * @ORM\Column(name="CustomerPhone1Area", type="string", length=20, nullable=true)
      */
     private $customerphone1area = '';
 
     /**
      * @var string
      *
-     * @ORM\Column(name="CustomerPhone1Number", type="string", length=20, nullable=false)
+     * @ORM\Column(name="CustomerPhone1Number", type="string", length=20, nullable=true)
      */
     private $customerphone1number = '';
 
     /**
      * @var string
      *
-     * @ORM\Column(name="CustomerPhone1Ext", type="string", length=10, nullable=false)
+     * @ORM\Column(name="CustomerPhone1Ext", type="string", length=10, nullable=true)
      */
     private $customerphone1ext = '';
 
     /**
      * @var string
      *
-     * @ORM\Column(name="CustomerPhone1Note", type="string", length=255, nullable=false)
+     * @ORM\Column(name="CustomerPhone1Note", type="string", length=255, nullable=true)
      */
     private $customerphone1note = '';
 
     /**
      * @var string
      *
-     * @ORM\Column(name="CustomerPhone2Area", type="string", length=20, nullable=false)
+     * @ORM\Column(name="CustomerPhone2Area", type="string", length=20, nullable=true)
      */
     private $customerphone2area = '';
 
     /**
      * @var string
      *
-     * @ORM\Column(name="CustomerPhone2Number", type="string", length=20, nullable=false)
+     * @ORM\Column(name="CustomerPhone2Number", type="string", length=20, nullable=true)
      */
     private $customerphone2number = '';
 
     /**
      * @var string
      *
-     * @ORM\Column(name="CustomerPhone2Ext", type="string", length=10, nullable=false)
+     * @ORM\Column(name="CustomerPhone2Ext", type="string", length=10, nullable=true)
      */
     private $customerphone2ext = '';
 
     /**
      * @var string
      *
-     * @ORM\Column(name="CustomerPhone2Note", type="string", length=255, nullable=false)
+     * @ORM\Column(name="CustomerPhone2Note", type="string", length=255, nullable=true)
      */
     private $customerphone2note = '';
 
     /**
      * @var string
      *
-     * @ORM\Column(name="CustomerPhone3Area", type="string", length=20, nullable=false)
+     * @ORM\Column(name="CustomerPhone3Area", type="string", length=20, nullable=true)
      */
     private $customerphone3area = '';
 
     /**
      * @var string
      *
-     * @ORM\Column(name="CustomerEmail1", type="string", length=255, nullable=false)
+     * @ORM\Column(name="CustomerEmail1", type="string", length=255, nullable=true)
      */
     private $customeremail1 = '';
 
     /**
      * @var string
      *
-     * @ORM\Column(name="CustomerEmail2", type="string", length=255, nullable=false)
+     * @ORM\Column(name="CustomerEmail2", type="string", length=255, nullable=true)
      */
     private $customeremail2 = '';
 
     /**
      * @var string
      *
-     * @ORM\Column(name="CustomerWebsite", type="string", length=255, nullable=false)
+     * @ORM\Column(name="CustomerWebsite", type="string", length=255, nullable=true)
      */
     private $customerwebsite = '';
 
     /**
      * @var string
      *
-     * @ORM\Column(name="CustomerNote", type="text", length=65535, nullable=false)
+     * @ORM\Column(name="CustomerNote", type="text", length=65535, nullable=true)
      */
     private $customernote;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="BrandID", type="string", length=50, nullable=false)
-     */
-    private $brandid;
-
-    /**
-     * @var string
-     *
-     * @ORM\Column(name="BrandDomains", type="text", length=65535, nullable=false)
+     * @ORM\Column(name="BrandDomains", type="text", length=65535, nullable=true)
      */
     private $branddomains;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="BrandHTMLRegister", type="text", length=65535, nullable=false)
-     */
-    private $brandhtmlregister;
-
-    /**
-     * @var string
-     *
-     * @ORM\Column(name="BrandHTMLDownload", type="text", length=65535, nullable=false)
-     */
-    private $brandhtmldownload;
-
-    /**
-     * @var string
-     *
-     * @ORM\Column(name="BrandLogo", type="string", length=255, nullable=false)
+     * @ORM\Column(name="BrandLogo", type="string", length=255, nullable=true)
      */
     private $brandlogo;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="BrandUrl", type="string", length=255, nullable=false)
+     * @ORM\Column(name="BrandUrl", type="string", length=255, nullable=true)
      */
     private $brandurl;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="AllianceID", type="string", length=50, nullable=false)
+     * @ORM\Column(name="AllianceID", type="string", length=50, nullable=true)
      */
     private $allianceid;
 
@@ -297,30 +283,16 @@ class LxCustomers
     /**
      * @var string
      *
-     * @ORM\Column(name="Cancel", type="string", length=2, nullable=true)
+     * @ORM\Column(name="loginMode", type="string", length=1, nullable=false)
      */
-    private $cancel;
-
-    /**
-     * @var \DateTime
-     *
-     * @ORM\Column(name="CancelDate", type="datetime", nullable=false)
-     */
-    private $canceldate = '0000-00-00 00:00:00';
+    private $loginmode;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="CancelNote", type="string", length=255, nullable=false)
+     * @ORM\Column(name="customerStatus", type="string", length=1, nullable=false)
      */
-    private $cancelnote = '';
-
-    /**
-     * @var string
-     *
-     * @ORM\Column(name="CampusList", type="text", length=65535, nullable=false)
-     */
-    private $campuslist;
+    private $customerstatus;
 
 
 
@@ -356,6 +328,30 @@ class LxCustomers
     public function getRegdate()
     {
         return $this->regdate;
+    }
+
+    /**
+     * Set reguserid
+     *
+     * @param integer $reguserid
+     *
+     * @return LxCustomers
+     */
+    public function setReguserid($reguserid)
+    {
+        $this->reguserid = $reguserid;
+
+        return $this;
+    }
+
+    /**
+     * Get reguserid
+     *
+     * @return integer
+     */
+    public function getReguserid()
+    {
+        return $this->reguserid;
     }
 
     /**
@@ -959,30 +955,6 @@ class LxCustomers
     }
 
     /**
-     * Set brandid
-     *
-     * @param string $brandid
-     *
-     * @return LxCustomers
-     */
-    public function setBrandid($brandid)
-    {
-        $this->brandid = $brandid;
-
-        return $this;
-    }
-
-    /**
-     * Get brandid
-     *
-     * @return string
-     */
-    public function getBrandid()
-    {
-        return $this->brandid;
-    }
-
-    /**
      * Set branddomains
      *
      * @param string $branddomains
@@ -1004,54 +976,6 @@ class LxCustomers
     public function getBranddomains()
     {
         return $this->branddomains;
-    }
-
-    /**
-     * Set brandhtmlregister
-     *
-     * @param string $brandhtmlregister
-     *
-     * @return LxCustomers
-     */
-    public function setBrandhtmlregister($brandhtmlregister)
-    {
-        $this->brandhtmlregister = $brandhtmlregister;
-
-        return $this;
-    }
-
-    /**
-     * Get brandhtmlregister
-     *
-     * @return string
-     */
-    public function getBrandhtmlregister()
-    {
-        return $this->brandhtmlregister;
-    }
-
-    /**
-     * Set brandhtmldownload
-     *
-     * @param string $brandhtmldownload
-     *
-     * @return LxCustomers
-     */
-    public function setBrandhtmldownload($brandhtmldownload)
-    {
-        $this->brandhtmldownload = $brandhtmldownload;
-
-        return $this;
-    }
-
-    /**
-     * Get brandhtmldownload
-     *
-     * @return string
-     */
-    public function getBrandhtmldownload()
-    {
-        return $this->brandhtmldownload;
     }
 
     /**
@@ -1271,98 +1195,50 @@ class LxCustomers
     }
 
     /**
-     * Set cancel
+     * Set loginmode
      *
-     * @param string $cancel
+     * @param string $loginmode
      *
      * @return LxCustomers
      */
-    public function setCancel($cancel)
+    public function setLoginmode($loginmode)
     {
-        $this->cancel = $cancel;
+        $this->loginmode = $loginmode;
 
         return $this;
     }
 
     /**
-     * Get cancel
+     * Get loginmode
      *
      * @return string
      */
-    public function getCancel()
+    public function getLoginmode()
     {
-        return $this->cancel;
+        return $this->loginmode;
     }
 
     /**
-     * Set canceldate
+     * Set customerstatus
      *
-     * @param \DateTime $canceldate
+     * @param string $customerstatus
      *
      * @return LxCustomers
      */
-    public function setCanceldate($canceldate)
+    public function setCustomerstatus($customerstatus)
     {
-        $this->canceldate = $canceldate;
+        $this->customerstatus = $customerstatus;
 
         return $this;
     }
 
     /**
-     * Get canceldate
-     *
-     * @return \DateTime
-     */
-    public function getCanceldate()
-    {
-        return $this->canceldate;
-    }
-
-    /**
-     * Set cancelnote
-     *
-     * @param string $cancelnote
-     *
-     * @return LxCustomers
-     */
-    public function setCancelnote($cancelnote)
-    {
-        $this->cancelnote = $cancelnote;
-
-        return $this;
-    }
-
-    /**
-     * Get cancelnote
+     * Get customerstatus
      *
      * @return string
      */
-    public function getCancelnote()
+    public function getCustomerstatus()
     {
-        return $this->cancelnote;
-    }
-
-    /**
-     * Set campuslist
-     *
-     * @param string $campuslist
-     *
-     * @return LxCustomers
-     */
-    public function setCampuslist($campuslist)
-    {
-        $this->campuslist = $campuslist;
-
-        return $this;
-    }
-
-    /**
-     * Get campuslist
-     *
-     * @return string
-     */
-    public function getCampuslist()
-    {
-        return $this->campuslist;
+        return $this->customerstatus;
     }
 }

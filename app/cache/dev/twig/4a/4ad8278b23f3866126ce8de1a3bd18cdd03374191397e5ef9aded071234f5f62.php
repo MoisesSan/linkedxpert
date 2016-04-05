@@ -22,32 +22,32 @@ class __TwigTemplate_77a74ffb8a2eb88b2db51ec2cefb3fde6364069d88a0709cec5d30da499
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_0983031cf89d25bd485ceee07577a0f56e387695fd810ede87f9ed0e4eb8726f = $this->env->getExtension("native_profiler");
-        $__internal_0983031cf89d25bd485ceee07577a0f56e387695fd810ede87f9ed0e4eb8726f->enter($__internal_0983031cf89d25bd485ceee07577a0f56e387695fd810ede87f9ed0e4eb8726f_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@SensioDistribution/Configurator/Step/doctrine.html.twig"));
+        $__internal_5c33f022b1033eed8f0ae8c4fcd50486a7bb27e920a1f8faa67bc266cafbab95 = $this->env->getExtension("native_profiler");
+        $__internal_5c33f022b1033eed8f0ae8c4fcd50486a7bb27e920a1f8faa67bc266cafbab95->enter($__internal_5c33f022b1033eed8f0ae8c4fcd50486a7bb27e920a1f8faa67bc266cafbab95_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@SensioDistribution/Configurator/Step/doctrine.html.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_0983031cf89d25bd485ceee07577a0f56e387695fd810ede87f9ed0e4eb8726f->leave($__internal_0983031cf89d25bd485ceee07577a0f56e387695fd810ede87f9ed0e4eb8726f_prof);
+        $__internal_5c33f022b1033eed8f0ae8c4fcd50486a7bb27e920a1f8faa67bc266cafbab95->leave($__internal_5c33f022b1033eed8f0ae8c4fcd50486a7bb27e920a1f8faa67bc266cafbab95_prof);
 
     }
 
     // line 3
     public function block_title($context, array $blocks = array())
     {
-        $__internal_f0ef0d69cac6fc7252ad2a0d962f20b12c6f8899a2784c6be69080be7bfcbf1a = $this->env->getExtension("native_profiler");
-        $__internal_f0ef0d69cac6fc7252ad2a0d962f20b12c6f8899a2784c6be69080be7bfcbf1a->enter($__internal_f0ef0d69cac6fc7252ad2a0d962f20b12c6f8899a2784c6be69080be7bfcbf1a_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "title"));
+        $__internal_2c564bfee3a7eba9ede95f900bb34d467d3fa24c3ff3d773ce8f1b70d5c0a33e = $this->env->getExtension("native_profiler");
+        $__internal_2c564bfee3a7eba9ede95f900bb34d467d3fa24c3ff3d773ce8f1b70d5c0a33e->enter($__internal_2c564bfee3a7eba9ede95f900bb34d467d3fa24c3ff3d773ce8f1b70d5c0a33e_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "title"));
 
         echo "Symfony - Configure database";
         
-        $__internal_f0ef0d69cac6fc7252ad2a0d962f20b12c6f8899a2784c6be69080be7bfcbf1a->leave($__internal_f0ef0d69cac6fc7252ad2a0d962f20b12c6f8899a2784c6be69080be7bfcbf1a_prof);
+        $__internal_2c564bfee3a7eba9ede95f900bb34d467d3fa24c3ff3d773ce8f1b70d5c0a33e->leave($__internal_2c564bfee3a7eba9ede95f900bb34d467d3fa24c3ff3d773ce8f1b70d5c0a33e_prof);
 
     }
 
     // line 5
     public function block_content($context, array $blocks = array())
     {
-        $__internal_be2d6bbbb24ba39d78841508b02876e670a7994bd7529670f8911550e2c7e762 = $this->env->getExtension("native_profiler");
-        $__internal_be2d6bbbb24ba39d78841508b02876e670a7994bd7529670f8911550e2c7e762->enter($__internal_be2d6bbbb24ba39d78841508b02876e670a7994bd7529670f8911550e2c7e762_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "content"));
+        $__internal_e0016e12773cbb7f444028cd93b80eef886a52d95a57900f677baf67ff94a9f4 = $this->env->getExtension("native_profiler");
+        $__internal_e0016e12773cbb7f444028cd93b80eef886a52d95a57900f677baf67ff94a9f4->enter($__internal_e0016e12773cbb7f444028cd93b80eef886a52d95a57900f677baf67ff94a9f4_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "content"));
 
         // line 6
         echo "    ";
@@ -119,7 +119,7 @@ class __TwigTemplate_77a74ffb8a2eb88b2db51ec2cefb3fde6364069d88a0709cec5d30da499
     </div>
 ";
         
-        $__internal_be2d6bbbb24ba39d78841508b02876e670a7994bd7529670f8911550e2c7e762->leave($__internal_be2d6bbbb24ba39d78841508b02876e670a7994bd7529670f8911550e2c7e762_prof);
+        $__internal_e0016e12773cbb7f444028cd93b80eef886a52d95a57900f677baf67ff94a9f4->leave($__internal_e0016e12773cbb7f444028cd93b80eef886a52d95a57900f677baf67ff94a9f4_prof);
 
     }
 

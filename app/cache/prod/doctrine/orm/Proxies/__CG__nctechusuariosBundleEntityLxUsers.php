@@ -64,10 +64,10 @@ class LxUsers extends \nctech\usuariosBundle\Entity\LxUsers implements \Doctrine
     public function __sleep()
     {
         if ($this->__isInitialized__) {
-            return ['__isInitialized__', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxUsers' . "\0" . 'id', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxUsers' . "\0" . 'regdate', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxUsers' . "\0" . 'regupdatedate', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxUsers' . "\0" . 'regupdateuserid', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxUsers' . "\0" . 'groupId', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxUsers' . "\0" . 'useremail', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxUsers' . "\0" . 'userpassword', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxUsers' . "\0" . 'usersalt', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxUsers' . "\0" . 'customername', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxUsers' . "\0" . 'userfirstname', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxUsers' . "\0" . 'userlastname', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxUsers' . "\0" . 'userfullname', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxUsers' . "\0" . 'userphonearea', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxUsers' . "\0" . 'userphonenumber', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxUsers' . "\0" . 'userstatus', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxUsers' . "\0" . 'usercompany', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxUsers' . "\0" . 'userjobtitle', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxUsers' . "\0" . 'cancelstatus', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxUsers' . "\0" . 'canceldatetime', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxUsers' . "\0" . 'canceluserid', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxUsers' . "\0" . 'cancelcomment', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxUsers' . "\0" . 'usertype', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxUsers' . "\0" . 'userrole', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxUsers' . "\0" . 'useraddresscountryid', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxUsers' . "\0" . 'useraddresscountry', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxUsers' . "\0" . 'useraddresscity', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxUsers' . "\0" . 'useraddressstateid', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxUsers' . "\0" . 'useraddressstate', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxUsers' . "\0" . 'userdisabled', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxUsers' . "\0" . 'useractivationcode', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxUsers' . "\0" . 'useractivatedetails', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxUsers' . "\0" . 'userage', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxUsers' . "\0" . 'usergender', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxUsers' . "\0" . 'userphone', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxUsers' . "\0" . 'usersuscriptiontotal', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxUsers' . "\0" . 'usersupervisorid', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxUsers' . "\0" . 'usersupervisorfullname', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxUsers' . "\0" . 'userdemo', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxUsers' . "\0" . 'userwidgets', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxUsers' . "\0" . 'usersemestre', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxUsers' . "\0" . 'usercareer', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxUsers' . "\0" . 'usercampus', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxUsers' . "\0" . 'customer'];
+            return ['__isInitialized__', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxUsers' . "\0" . 'id', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxUsers' . "\0" . 'regdate', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxUsers' . "\0" . 'reguserid', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxUsers' . "\0" . 'regupdatedate', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxUsers' . "\0" . 'regupdateuserid', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxUsers' . "\0" . 'customername', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxUsers' . "\0" . 'groupId', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxUsers' . "\0" . 'uservisiblename', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxUsers' . "\0" . 'useremail', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxUsers' . "\0" . 'userpassword', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxUsers' . "\0" . 'usersalt', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxUsers' . "\0" . 'userfirstname', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxUsers' . "\0" . 'userlastname', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxUsers' . "\0" . 'userfullname', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxUsers' . "\0" . 'userphonearea', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxUsers' . "\0" . 'userphonenumber', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxUsers' . "\0" . 'userstatus', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxUsers' . "\0" . 'usercompany', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxUsers' . "\0" . 'userjobtitle', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxUsers' . "\0" . 'userrole', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxUsers' . "\0" . 'useraddresscountryid', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxUsers' . "\0" . 'useraddresscountry', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxUsers' . "\0" . 'useraddresscity', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxUsers' . "\0" . 'useraddressstateid', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxUsers' . "\0" . 'useraddressstate', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxUsers' . "\0" . 'userdisabled', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxUsers' . "\0" . 'useractivationcode', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxUsers' . "\0" . 'userbirthdate', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxUsers' . "\0" . 'usergender', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxUsers' . "\0" . 'userphone', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxUsers' . "\0" . 'usersuscriptiontotal', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxUsers' . "\0" . 'usersupervisorid', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxUsers' . "\0" . 'usersupervisorfullname', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxUsers' . "\0" . 'userdemo', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxUsers' . "\0" . 'customer'];
         }
 
-        return ['__isInitialized__', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxUsers' . "\0" . 'id', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxUsers' . "\0" . 'regdate', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxUsers' . "\0" . 'regupdatedate', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxUsers' . "\0" . 'regupdateuserid', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxUsers' . "\0" . 'groupId', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxUsers' . "\0" . 'useremail', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxUsers' . "\0" . 'userpassword', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxUsers' . "\0" . 'usersalt', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxUsers' . "\0" . 'customername', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxUsers' . "\0" . 'userfirstname', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxUsers' . "\0" . 'userlastname', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxUsers' . "\0" . 'userfullname', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxUsers' . "\0" . 'userphonearea', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxUsers' . "\0" . 'userphonenumber', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxUsers' . "\0" . 'userstatus', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxUsers' . "\0" . 'usercompany', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxUsers' . "\0" . 'userjobtitle', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxUsers' . "\0" . 'cancelstatus', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxUsers' . "\0" . 'canceldatetime', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxUsers' . "\0" . 'canceluserid', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxUsers' . "\0" . 'cancelcomment', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxUsers' . "\0" . 'usertype', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxUsers' . "\0" . 'userrole', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxUsers' . "\0" . 'useraddresscountryid', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxUsers' . "\0" . 'useraddresscountry', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxUsers' . "\0" . 'useraddresscity', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxUsers' . "\0" . 'useraddressstateid', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxUsers' . "\0" . 'useraddressstate', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxUsers' . "\0" . 'userdisabled', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxUsers' . "\0" . 'useractivationcode', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxUsers' . "\0" . 'useractivatedetails', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxUsers' . "\0" . 'userage', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxUsers' . "\0" . 'usergender', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxUsers' . "\0" . 'userphone', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxUsers' . "\0" . 'usersuscriptiontotal', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxUsers' . "\0" . 'usersupervisorid', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxUsers' . "\0" . 'usersupervisorfullname', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxUsers' . "\0" . 'userdemo', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxUsers' . "\0" . 'userwidgets', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxUsers' . "\0" . 'usersemestre', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxUsers' . "\0" . 'usercareer', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxUsers' . "\0" . 'usercampus', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxUsers' . "\0" . 'customer'];
+        return ['__isInitialized__', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxUsers' . "\0" . 'id', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxUsers' . "\0" . 'regdate', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxUsers' . "\0" . 'reguserid', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxUsers' . "\0" . 'regupdatedate', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxUsers' . "\0" . 'regupdateuserid', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxUsers' . "\0" . 'customername', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxUsers' . "\0" . 'groupId', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxUsers' . "\0" . 'uservisiblename', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxUsers' . "\0" . 'useremail', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxUsers' . "\0" . 'userpassword', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxUsers' . "\0" . 'usersalt', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxUsers' . "\0" . 'userfirstname', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxUsers' . "\0" . 'userlastname', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxUsers' . "\0" . 'userfullname', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxUsers' . "\0" . 'userphonearea', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxUsers' . "\0" . 'userphonenumber', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxUsers' . "\0" . 'userstatus', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxUsers' . "\0" . 'usercompany', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxUsers' . "\0" . 'userjobtitle', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxUsers' . "\0" . 'userrole', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxUsers' . "\0" . 'useraddresscountryid', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxUsers' . "\0" . 'useraddresscountry', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxUsers' . "\0" . 'useraddresscity', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxUsers' . "\0" . 'useraddressstateid', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxUsers' . "\0" . 'useraddressstate', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxUsers' . "\0" . 'userdisabled', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxUsers' . "\0" . 'useractivationcode', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxUsers' . "\0" . 'userbirthdate', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxUsers' . "\0" . 'usergender', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxUsers' . "\0" . 'userphone', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxUsers' . "\0" . 'usersuscriptiontotal', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxUsers' . "\0" . 'usersupervisorid', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxUsers' . "\0" . 'usersupervisorfullname', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxUsers' . "\0" . 'userdemo', '' . "\0" . 'nctech\\usuariosBundle\\Entity\\LxUsers' . "\0" . 'customer'];
     }
 
     /**
@@ -213,6 +213,28 @@ class LxUsers extends \nctech\usuariosBundle\Entity\LxUsers implements \Doctrine
     /**
      * {@inheritDoc}
      */
+    public function setReguserid($reguserid)
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setReguserid', [$reguserid]);
+
+        return parent::setReguserid($reguserid);
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function getReguserid()
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getReguserid', []);
+
+        return parent::getReguserid();
+    }
+
+    /**
+     * {@inheritDoc}
+     */
     public function setRegupdatedate($regupdatedate)
     {
 
@@ -257,6 +279,28 @@ class LxUsers extends \nctech\usuariosBundle\Entity\LxUsers implements \Doctrine
     /**
      * {@inheritDoc}
      */
+    public function setCustomername($customername)
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setCustomername', [$customername]);
+
+        return parent::setCustomername($customername);
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function getCustomername()
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getCustomername', []);
+
+        return parent::getCustomername();
+    }
+
+    /**
+     * {@inheritDoc}
+     */
     public function setGroupId($groupId)
     {
 
@@ -274,6 +318,28 @@ class LxUsers extends \nctech\usuariosBundle\Entity\LxUsers implements \Doctrine
         $this->__initializer__ && $this->__initializer__->__invoke($this, 'getGroupId', []);
 
         return parent::getGroupId();
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function setUservisiblename($uservisiblename)
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setUservisiblename', [$uservisiblename]);
+
+        return parent::setUservisiblename($uservisiblename);
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function getUservisiblename()
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getUservisiblename', []);
+
+        return parent::getUservisiblename();
     }
 
     /**
@@ -323,12 +389,12 @@ class LxUsers extends \nctech\usuariosBundle\Entity\LxUsers implements \Doctrine
     /**
      * {@inheritDoc}
      */
-    public function setUsersalt($usersalt)
+    public function setSalt($usersalt)
     {
 
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setUsersalt', [$usersalt]);
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setSalt', [$usersalt]);
 
-        return parent::setUsersalt($usersalt);
+        return parent::setSalt($usersalt);
     }
 
     /**
@@ -340,28 +406,6 @@ class LxUsers extends \nctech\usuariosBundle\Entity\LxUsers implements \Doctrine
         $this->__initializer__ && $this->__initializer__->__invoke($this, 'getSalt', []);
 
         return parent::getSalt();
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function setCustomername($customername)
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setCustomername', [$customername]);
-
-        return parent::setCustomername($customername);
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function getCustomername()
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getCustomername', []);
-
-        return parent::getCustomername();
     }
 
     /**
@@ -543,116 +587,6 @@ class LxUsers extends \nctech\usuariosBundle\Entity\LxUsers implements \Doctrine
     /**
      * {@inheritDoc}
      */
-    public function setCancelstatus($cancelstatus)
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setCancelstatus', [$cancelstatus]);
-
-        return parent::setCancelstatus($cancelstatus);
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function getCancelstatus()
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getCancelstatus', []);
-
-        return parent::getCancelstatus();
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function setCanceldatetime($canceldatetime)
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setCanceldatetime', [$canceldatetime]);
-
-        return parent::setCanceldatetime($canceldatetime);
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function getCanceldatetime()
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getCanceldatetime', []);
-
-        return parent::getCanceldatetime();
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function setCanceluserid($canceluserid)
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setCanceluserid', [$canceluserid]);
-
-        return parent::setCanceluserid($canceluserid);
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function getCanceluserid()
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getCanceluserid', []);
-
-        return parent::getCanceluserid();
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function setCancelcomment($cancelcomment)
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setCancelcomment', [$cancelcomment]);
-
-        return parent::setCancelcomment($cancelcomment);
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function getCancelcomment()
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getCancelcomment', []);
-
-        return parent::getCancelcomment();
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function setUsertype($usertype)
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setUsertype', [$usertype]);
-
-        return parent::setUsertype($usertype);
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function getUsertype()
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getUsertype', []);
-
-        return parent::getUsertype();
-    }
-
-    /**
-     * {@inheritDoc}
-     */
     public function setUserrole($userrole)
     {
 
@@ -829,45 +763,23 @@ class LxUsers extends \nctech\usuariosBundle\Entity\LxUsers implements \Doctrine
     /**
      * {@inheritDoc}
      */
-    public function setUseractivatedetails($useractivatedetails)
+    public function setUserbirthdate($userbirthdate)
     {
 
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setUseractivatedetails', [$useractivatedetails]);
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setUserbirthdate', [$userbirthdate]);
 
-        return parent::setUseractivatedetails($useractivatedetails);
+        return parent::setUserbirthdate($userbirthdate);
     }
 
     /**
      * {@inheritDoc}
      */
-    public function getUseractivatedetails()
+    public function getUserbirthdate()
     {
 
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getUseractivatedetails', []);
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getUserbirthdate', []);
 
-        return parent::getUseractivatedetails();
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function setUserage($userage)
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setUserage', [$userage]);
-
-        return parent::setUserage($userage);
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function getUserage()
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getUserage', []);
-
-        return parent::getUserage();
+        return parent::getUserbirthdate();
     }
 
     /**
@@ -1000,94 +912,6 @@ class LxUsers extends \nctech\usuariosBundle\Entity\LxUsers implements \Doctrine
         $this->__initializer__ && $this->__initializer__->__invoke($this, 'getUserdemo', []);
 
         return parent::getUserdemo();
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function setUserwidgets($userwidgets)
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setUserwidgets', [$userwidgets]);
-
-        return parent::setUserwidgets($userwidgets);
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function getUserwidgets()
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getUserwidgets', []);
-
-        return parent::getUserwidgets();
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function setUsersemestre($usersemestre)
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setUsersemestre', [$usersemestre]);
-
-        return parent::setUsersemestre($usersemestre);
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function getUsersemestre()
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getUsersemestre', []);
-
-        return parent::getUsersemestre();
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function setUsercareer($usercareer)
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setUsercareer', [$usercareer]);
-
-        return parent::setUsercareer($usercareer);
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function getUsercareer()
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getUsercareer', []);
-
-        return parent::getUsercareer();
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function setUsercampus($usercampus)
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setUsercampus', [$usercampus]);
-
-        return parent::setUsercampus($usercampus);
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function getUsercampus()
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getUsercampus', []);
-
-        return parent::getUsercampus();
     }
 
     /**

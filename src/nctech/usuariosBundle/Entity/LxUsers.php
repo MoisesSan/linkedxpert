@@ -30,18 +30,32 @@ class LxUsers implements UserInterface
     private $regdate;
 
     /**
+     * @var integer
+     *
+     * @ORM\Column(name="regUserId", type="integer", nullable=true)
+     */
+    private $reguserid;
+
+    /**
      * @var \DateTime
      *
-     * @ORM\Column(name="regUpdateDate", type="datetime", nullable=false)
+     * @ORM\Column(name="regUpdateDate", type="datetime", nullable=true)
      */
     private $regupdatedate;
 
     /**
      * @var integer
      *
-     * @ORM\Column(name="regUpdateUserId", type="integer", nullable=false)
+     * @ORM\Column(name="regUpdateUserId", type="integer", nullable=true)
      */
     private $regupdateuserid = '0';
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="customerName", type="string", length=255, nullable=true)
+     */
+    private $customername;
 
     /**
      * @var integer
@@ -49,6 +63,13 @@ class LxUsers implements UserInterface
      * @ORM\Column(name="group_id", type="integer", nullable=true)
      */
     private $groupId = '0';
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="userVisibleName", type="string", length=255, nullable=true)
+     */
+    private $uservisiblename;
 
     /**
      * @var string
@@ -70,13 +91,6 @@ class LxUsers implements UserInterface
      * @ORM\Column(name="UserSalt", type="string", length=255, nullable=false)
      */
     private $usersalt;
-
-    /**
-     * @var string
-     *
-     * @ORM\Column(name="customerName", type="string", length=255, nullable=true)
-     */
-    private $customername;
 
     /**
      * @var string
@@ -114,9 +128,9 @@ class LxUsers implements UserInterface
     private $userphonenumber;
 
     /**
-     * @var integer
+     * @var string
      *
-     * @ORM\Column(name="UserStatus", type="integer", nullable=false)
+     * @ORM\Column(name="UserStatus", type="string", length=1, nullable=false)
      */
     private $userstatus;
 
@@ -133,41 +147,6 @@ class LxUsers implements UserInterface
      * @ORM\Column(name="UserJobTitle", type="string", length=50, nullable=true)
      */
     private $userjobtitle;
-
-    /**
-     * @var integer
-     *
-     * @ORM\Column(name="CancelStatus", type="integer", nullable=false)
-     */
-    private $cancelstatus;
-
-    /**
-     * @var \DateTime
-     *
-     * @ORM\Column(name="CancelDateTime", type="datetime", nullable=true)
-     */
-    private $canceldatetime;
-
-    /**
-     * @var integer
-     *
-     * @ORM\Column(name="CancelUserID", type="integer", nullable=true)
-     */
-    private $canceluserid;
-
-    /**
-     * @var string
-     *
-     * @ORM\Column(name="CancelComment", type="text", length=65535, nullable=true)
-     */
-    private $cancelcomment;
-
-    /**
-     * @var integer
-     *
-     * @ORM\Column(name="UserType", type="integer", nullable=false)
-     */
-    private $usertype;
 
     /**
      * @var string
@@ -226,18 +205,11 @@ class LxUsers implements UserInterface
     private $useractivationcode;
 
     /**
-     * @var string
+     * @var \DateTime
      *
-     * @ORM\Column(name="UserActivateDetails", type="text", length=65535, nullable=true)
+     * @ORM\Column(name="UserBirthDate", type="date", nullable=true)
      */
-    private $useractivatedetails;
-
-    /**
-     * @var integer
-     *
-     * @ORM\Column(name="UserAge", type="integer", nullable=true)
-     */
-    private $userage;
+    private $userbirthdate;
 
     /**
      * @var string
@@ -280,34 +252,6 @@ class LxUsers implements UserInterface
      * @ORM\Column(name="UserDemo", type="integer", nullable=true)
      */
     private $userdemo;
-
-    /**
-     * @var string
-     *
-     * @ORM\Column(name="UserWidgets", type="text", length=65535, nullable=true)
-     */
-    private $userwidgets;
-
-    /**
-     * @var string
-     *
-     * @ORM\Column(name="UserSemestre", type="string", length=100, nullable=true)
-     */
-    private $usersemestre;
-
-    /**
-     * @var string
-     *
-     * @ORM\Column(name="UserCareer", type="string", length=255, nullable=true)
-     */
-    private $usercareer;
-
-    /**
-     * @var string
-     *
-     * @ORM\Column(name="UserCampus", type="string", length=100, nullable=true)
-     */
-    private $usercampus;
 
     /**
      * @var \LxCustomers
@@ -353,6 +297,30 @@ class LxUsers implements UserInterface
     public function getRegdate()
     {
         return $this->regdate;
+    }
+
+    /**
+     * Set reguserid
+     *
+     * @param integer $reguserid
+     *
+     * @return LxUsers
+     */
+    public function setReguserid($reguserid)
+    {
+        $this->reguserid = $reguserid;
+
+        return $this;
+    }
+
+    /**
+     * Get reguserid
+     *
+     * @return integer
+     */
+    public function getReguserid()
+    {
+        return $this->reguserid;
     }
 
     /**
@@ -404,6 +372,30 @@ class LxUsers implements UserInterface
     }
 
     /**
+     * Set customername
+     *
+     * @param string $customername
+     *
+     * @return LxUsers
+     */
+    public function setCustomername($customername)
+    {
+        $this->customername = $customername;
+
+        return $this;
+    }
+
+    /**
+     * Get customername
+     *
+     * @return string
+     */
+    public function getCustomername()
+    {
+        return $this->customername;
+    }
+
+    /**
      * Set groupId
      *
      * @param integer $groupId
@@ -425,6 +417,30 @@ class LxUsers implements UserInterface
     public function getGroupId()
     {
         return $this->groupId;
+    }
+
+    /**
+     * Set uservisiblename
+     *
+     * @param string $uservisiblename
+     *
+     * @return LxUsers
+     */
+    public function setUservisiblename($uservisiblename)
+    {
+        $this->uservisiblename = $uservisiblename;
+
+        return $this;
+    }
+
+    /**
+     * Get uservisiblename
+     *
+     * @return string
+     */
+    public function getUservisiblename()
+    {
+        return $this->uservisiblename;
     }
 
     /**
@@ -482,7 +498,7 @@ class LxUsers implements UserInterface
      *
      * @return LxUsers
      */
-    public function setUsersalt($usersalt)
+    public function setSalt($usersalt)
     {
         $this->usersalt = $usersalt;
 
@@ -497,30 +513,6 @@ class LxUsers implements UserInterface
     public function getSalt()
     {
         return $this->usersalt;
-    }
-
-    /**
-     * Set customername
-     *
-     * @param string $customername
-     *
-     * @return LxUsers
-     */
-    public function setCustomername($customername)
-    {
-        $this->customername = $customername;
-
-        return $this;
-    }
-
-    /**
-     * Get customername
-     *
-     * @return string
-     */
-    public function getCustomername()
-    {
-        return $this->customername;
     }
 
     /**
@@ -646,7 +638,7 @@ class LxUsers implements UserInterface
     /**
      * Set userstatus
      *
-     * @param integer $userstatus
+     * @param string $userstatus
      *
      * @return LxUsers
      */
@@ -660,7 +652,7 @@ class LxUsers implements UserInterface
     /**
      * Get userstatus
      *
-     * @return integer
+     * @return string
      */
     public function getUserstatus()
     {
@@ -713,126 +705,6 @@ class LxUsers implements UserInterface
     public function getUserjobtitle()
     {
         return $this->userjobtitle;
-    }
-
-    /**
-     * Set cancelstatus
-     *
-     * @param integer $cancelstatus
-     *
-     * @return LxUsers
-     */
-    public function setCancelstatus($cancelstatus)
-    {
-        $this->cancelstatus = $cancelstatus;
-
-        return $this;
-    }
-
-    /**
-     * Get cancelstatus
-     *
-     * @return integer
-     */
-    public function getCancelstatus()
-    {
-        return $this->cancelstatus;
-    }
-
-    /**
-     * Set canceldatetime
-     *
-     * @param \DateTime $canceldatetime
-     *
-     * @return LxUsers
-     */
-    public function setCanceldatetime($canceldatetime)
-    {
-        $this->canceldatetime = $canceldatetime;
-
-        return $this;
-    }
-
-    /**
-     * Get canceldatetime
-     *
-     * @return \DateTime
-     */
-    public function getCanceldatetime()
-    {
-        return $this->canceldatetime;
-    }
-
-    /**
-     * Set canceluserid
-     *
-     * @param integer $canceluserid
-     *
-     * @return LxUsers
-     */
-    public function setCanceluserid($canceluserid)
-    {
-        $this->canceluserid = $canceluserid;
-
-        return $this;
-    }
-
-    /**
-     * Get canceluserid
-     *
-     * @return integer
-     */
-    public function getCanceluserid()
-    {
-        return $this->canceluserid;
-    }
-
-    /**
-     * Set cancelcomment
-     *
-     * @param string $cancelcomment
-     *
-     * @return LxUsers
-     */
-    public function setCancelcomment($cancelcomment)
-    {
-        $this->cancelcomment = $cancelcomment;
-
-        return $this;
-    }
-
-    /**
-     * Get cancelcomment
-     *
-     * @return string
-     */
-    public function getCancelcomment()
-    {
-        return $this->cancelcomment;
-    }
-
-    /**
-     * Set usertype
-     *
-     * @param integer $usertype
-     *
-     * @return LxUsers
-     */
-    public function setUsertype($usertype)
-    {
-        $this->usertype = $usertype;
-
-        return $this;
-    }
-
-    /**
-     * Get usertype
-     *
-     * @return integer
-     */
-    public function getUsertype()
-    {
-        return $this->usertype;
     }
 
     /**
@@ -1028,51 +900,27 @@ class LxUsers implements UserInterface
     }
 
     /**
-     * Set useractivatedetails
+     * Set userbirthdate
      *
-     * @param string $useractivatedetails
+     * @param \DateTime $userbirthdate
      *
      * @return LxUsers
      */
-    public function setUseractivatedetails($useractivatedetails)
+    public function setUserbirthdate($userbirthdate)
     {
-        $this->useractivatedetails = $useractivatedetails;
+        $this->userbirthdate = $userbirthdate;
 
         return $this;
     }
 
     /**
-     * Get useractivatedetails
+     * Get userbirthdate
      *
-     * @return string
+     * @return \DateTime
      */
-    public function getUseractivatedetails()
+    public function getUserbirthdate()
     {
-        return $this->useractivatedetails;
-    }
-
-    /**
-     * Set userage
-     *
-     * @param integer $userage
-     *
-     * @return LxUsers
-     */
-    public function setUserage($userage)
-    {
-        $this->userage = $userage;
-
-        return $this;
-    }
-
-    /**
-     * Get userage
-     *
-     * @return integer
-     */
-    public function getUserage()
-    {
-        return $this->userage;
+        return $this->userbirthdate;
     }
 
     /**
@@ -1220,102 +1068,6 @@ class LxUsers implements UserInterface
     }
 
     /**
-     * Set userwidgets
-     *
-     * @param string $userwidgets
-     *
-     * @return LxUsers
-     */
-    public function setUserwidgets($userwidgets)
-    {
-        $this->userwidgets = $userwidgets;
-
-        return $this;
-    }
-
-    /**
-     * Get userwidgets
-     *
-     * @return string
-     */
-    public function getUserwidgets()
-    {
-        return $this->userwidgets;
-    }
-
-    /**
-     * Set usersemestre
-     *
-     * @param string $usersemestre
-     *
-     * @return LxUsers
-     */
-    public function setUsersemestre($usersemestre)
-    {
-        $this->usersemestre = $usersemestre;
-
-        return $this;
-    }
-
-    /**
-     * Get usersemestre
-     *
-     * @return string
-     */
-    public function getUsersemestre()
-    {
-        return $this->usersemestre;
-    }
-
-    /**
-     * Set usercareer
-     *
-     * @param string $usercareer
-     *
-     * @return LxUsers
-     */
-    public function setUsercareer($usercareer)
-    {
-        $this->usercareer = $usercareer;
-
-        return $this;
-    }
-
-    /**
-     * Get usercareer
-     *
-     * @return string
-     */
-    public function getUsercareer()
-    {
-        return $this->usercareer;
-    }
-
-    /**
-     * Set usercampus
-     *
-     * @param string $usercampus
-     *
-     * @return LxUsers
-     */
-    public function setUsercampus($usercampus)
-    {
-        $this->usercampus = $usercampus;
-
-        return $this;
-    }
-
-    /**
-     * Get usercampus
-     *
-     * @return string
-     */
-    public function getUsercampus()
-    {
-        return $this->usercampus;
-    }
-
-    /**
      * Set customer
      *
      * @param \nctech\usuariosBundle\Entity\LxCustomers $customer
@@ -1339,12 +1091,6 @@ class LxUsers implements UserInterface
         return $this->customer;
     }
 	
-	/*
-	public function ereaseCredentials(){
-		
-	}
-	*/
-	
 	public function getRoles(){
 		return array('ROLE_USUARIO');
 	}
@@ -1360,5 +1106,4 @@ class LxUsers implements UserInterface
 	public function eraseCredentials(){
 	
 	}
-	
 }
